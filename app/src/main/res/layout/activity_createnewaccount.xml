@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FF000000">
+
+	<RelativeLayout
+		android:layout_width="310dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="100dp"
+		android:background="@drawable/resources_2"
+		android:gravity="center"
+		android:paddingBottom="20sp">
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:inputType="textEmailAddress"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:id="@+id/key1"
+			android:padding="10sp"
+			android:layout_marginTop="10sp"
+			android:background="@drawable/resources"
+			android:hint="Enter Your Email"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:inputType="textPassword"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_below="@+id/key1"
+			android:layout_gravity="center"
+			android:layout_marginTop="10sp"
+			android:padding="10sp"
+			android:id="@+id/value"
+			android:background="@drawable/resources"
+			android:hint="Enter Your Password"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10sp"
+			android:layout_below="@+id/value"
+			android:layout_centerInParent="true"
+			android:onClick="add"
+			android:text="Add"
+			android:background="@drawable/resources"
+			android:translationX="-5dp"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
